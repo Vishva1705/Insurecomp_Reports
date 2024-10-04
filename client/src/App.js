@@ -17,7 +17,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/salesData');
+        const response = await axios.get('https://insurecomp-reports.onrender.com/api/salesData');
         const csvData = response.data;
 
         // Parse CSV data
